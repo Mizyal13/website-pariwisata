@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Tiket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo pantai" class="logo">
+        <div class="text">PANTAI.COM</div>
+
+        <div class="hamburger" onclick="this.classList.toggle('active')">            
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu" id="menu">
+           
+            <tr> <td><a href="home.html">Home</a></td> </tr> 
+            <tr><td><a href="about.html">About</a></td></tr>
+            <tr><td><a href="gallery.html">Gallery</a></td></tr>
+            <tr><td><a href="tiket.html">Tiket</a></td> </tr> 
+            <tr><td><a href="contact.html">Contact</a></td> </tr> 
+            <tr><td><a href="sidemaps.html">sidemaps</a></td> </tr> 
+         
+        </nav>
+    </header>
+<div class="isi">
+
+        <div class="tiket">
+            <h2>Harga & Cek Tiket</h2>
+            <p><strong>Pantai Karanghawu:</strong> Rp 20.000</p>
+            <p><strong>Pantai Citepus:</strong> Rp 25.000</p>
+            <p><strong>Pantai Pelabuhan Ratu:</strong> Rp 30.000</p>
+            <p><strong>Pantai Ujung Genteng:</strong> Rp 35.000</p>
+            <p><strong>Pantai Pangumbahan:</strong> Rp 40.000</p>
+    
+            <select id="tempatWisata">
+                <option value="20000">Pantai Karanghawu</option>
+                <option value="25000">Pantai Citepus</option>
+                <option value="30000">Pantai Pelabuhan Ratu</option>
+                <option value="35000">Pantai Ujung Genteng</option>
+                <option value="40000">Pantai Pangumbahan</option>
+            </select>
+            <input type="number" id="jumlahTiket" placeholder="Jumlah Tiket" min="1">
+            <button onclick="hitungHarga()">Hitung</button>
+            <div id="output" class="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 wisata pantai</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #023958;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo {
+    width: 50px;
+}
+
+.text {
+    font-size: 30px; 
+    font-family: Copperplate, Papyrus, fantasy;
+  }
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 20px;
+}
+.hamburger div {
+    height: 5px;
+    background-color: #09b9ff;
+}
+.menu {
+    display: none;
+    background-color: #023858a4;
+    position: fixed;
+    top: 70;
+    right: 0;
+    height: 45%;
+    width: 200px;
+}
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+.menu a:hover {
+    background-color: #57575770;
+}
+.hamburger.active + .menu {
+    display: block;
+}
+
+
+.isi {
+    background-image: url(assets/images/destination.jpg);
+    background-repeat: no-repeat;     
+    background-size: cover;         
+    background-position: center;  
+    background-attachment: fixed; 
+    min-height: 100%;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background: #008eed;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #006094;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #023958;
+    color: #fff;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+
+.about-section {
+    padding: 10px 20px;
+    background-color: #f4f4f471;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.beach-list {
+    margin-top: 10px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.beach-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beach-item h3 {
+    font-size: 28px;
+    color: #09b9ff;
+    margin-bottom: 10px;
+}
+
+.beach-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #f4f4f496;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+
+.vidio {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+.vidio video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.tiket {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #19cae283;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #0079c4;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #070088;
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000306;
+}
+
+.roadmap-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.roadmap-box {
+    background-color: rgba(255, 255, 255, 0.737);
+    border: 2px solid #005f73;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.roadmap-box:hover {
+    transform: scale(1.05);
+}
+
+.roadmap-box h2 {
+    font-size: 1.8rem;
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.roadmap-box ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
